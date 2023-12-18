@@ -16,14 +16,16 @@ logout.addEventListener("click",()=>{
     localStorage.removeItem("Login")
     window.location ="login.html"
 })
-function Products(name,price,category,img,id){
-    this.name=name;
-    this.price=price;
-    this.category=category;
-    this.img=img;
-    this.id=id;
-    this.count=1;
-    product.push(this);
+class Products{
+ constructor(name,price,category,img,id){
+this.name=name;
+this.price=price;
+this.category=category;
+this.img=img;
+this.id=id;
+this.count=1;
+product.push(this);
+ }
 }
 
 let product=[]
